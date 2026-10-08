@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentOS - Subjects</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>StudentOS</h1>
+        <p>Subjects & Academic Performance</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Dashboard</a> |
+        <a href="subjects.html">Subjects</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="assignments.html">Assignments</a> |
+        <a href="exams.html">Exams</a> |
+        <a href="internships.html">Internships</a> |
+        <a href="resume.html">Resume</a> |
+        <a href="resources.html">Resources</a> |
+        <a href="profile.html">Profile</a>|
+        <a href="about.html">About</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>My Subjects</h2>
+            <p>View your current semester subjects and academic performance.</p>
+        </section>
+
+        <section>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Code</th>
+                        <th>Credits</th>
+                        <th>Internal Marks</th>
+                        <th>Grade</th>
+                        <th>Attendance</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Engineering Mathematics</td>
+                        <td>MAT101</td>
+                        <td>4</td>
+                        <td>42/50</td>
+                        <td>A</td>
+                        <td>91%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Programming for Problem Solving</td>
+                        <td>PPS101</td>
+                        <td>4</td>
+                        <td>45/50</td>
+                        <td>A+</td>
+                        <td>94%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Engineering Physics</td>
+                        <td>PHY101</td>
+                        <td>4</td>
+                        <td>39/50</td>
+                        <td>A</td>
+                        <td>88%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Engineering Mechanics</td>
+                        <td>FME101</td>
+                        <td>3</td>
+                        <td>41/50</td>
+                        <td>A</td>
+                        <td>90%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Communication Skills</td>
+                        <td>ENG101</td>
+                        <td>3</td>
+                        <td>44/50</td>
+                        <td>A+</td>
+                        <td>96%</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section>
+
+            <h2>Add a Subject</h2>
+
+            <form>
+
+                <p>
+                    <label for="subject-name">Subject Name:</label>
+                    <input type="text" id="subject-name" name="subject-name">
+                </p>
+
+                <p>
+                    <label for="subject-code">Subject Code:</label>
+                    <input type="text" id="subject-code" name="subject-code">
+                </p>
+
+                <p>
+                    <label for="credits">Credits:</label>
+                    <input type="number" id="credits" name="credits">
+                </p>
+
+                <p>
+                    <label for="marks">Internal Marks:</label>
+                    <input type="number" id="marks" name="marks">
+                </p>
+
+                <p>
+                    <label for="grade">Grade:</label>
+
+                    <select id="grade" name="grade">
+
+                        <option value="">Select Grade</option>
+                        <option value="O">O</option>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+
+                    </select>
+
+                </p>
+
+                <button type="submit">Add Subject</button>
+
+            </form>
+
+        </section>
+
+        <section>
+
+            <h2>Academic Summary</h2>
+
+            <article>
+                <h3>Total Subjects</h3>
+                <p>5</p>
+            </article>
+
+            <article>
+                <h3>Total Credits</h3>
+                <p>18</p>
+            </article>
+
+            <article>
+                <h3>Current CGPA</h3>
+                <p>8.5</p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentOS. Built by a CSE student.</p>
+    </footer>
+
+</body>
+
+</html>

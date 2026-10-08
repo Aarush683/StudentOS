@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentOS - Exams</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>StudentOS</h1>
+        <p>Exam Planner</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Dashboard</a> |
+        <a href="subjects.html">Subjects</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="assignments.html">Assignments</a> |
+        <a href="exams.html">Exams</a> |
+        <a href="internships.html">Internships</a> |
+        <a href="resume.html">Resume</a> |
+        <a href="resources.html">Resources</a> |
+        <a href="profile.html">Profile</a>|
+        <a href="about.html">About</a>
+    </nav>
+
+    <main>
+
+        <!-- Exam Overview -->
+
+        <section>
+
+            <h2>Exam Overview</h2>
+
+            <article>
+                <h3>Upcoming Exams</h3>
+                <p>4</p>
+            </article>
+
+            <article>
+                <h3>Completed Exams</h3>
+                <p>2</p>
+            </article>
+
+            <article>
+                <h3>Next Exam</h3>
+                <p>Engineering Mathematics</p>
+            </article>
+
+            <article>
+                <h3>Days Remaining</h3>
+                <p>7 Days</p>
+            </article>
+
+        </section>
+
+
+        <!-- Exam Schedule -->
+
+        <section>
+
+            <h2>Exam Schedule</h2>
+
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+                        <th>Subject</th>
+                        <th>Exam Type</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Venue</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Engineering Mathematics</td>
+                        <td>Mid-Semester</td>
+                        <td>15 October 2026</td>
+                        <td>9:30 AM - 11:00 AM</td>
+                        <td>AB4 - 315</td>
+                        <td>Upcoming</td>
+                    </tr>
+
+                    <tr>
+                        <td>Engineering Physics</td>
+                        <td>Mid-Semester</td>
+                        <td>17 October 2026</td>
+                        <td>9:30 AM - 11:00 AM</td>
+                        <td>AB4 - 317</td>
+                        <td>Upcoming</td>
+                    </tr>
+
+                    <tr>
+                        <td>Programming for Problem Solving</td>
+                        <td>Mid-Semester</td>
+                        <td>20 October 2026</td>
+                        <td>9:30 AM - 11:00 AM</td>
+                        <td>AB4 - 315</td>
+                        <td>Upcoming</td>
+                    </tr>
+
+                    <tr>
+                        <td>Engineering Mechanics</td>
+                        <td>Quiz</td>
+                        <td>22 October 2026</td>
+                        <td>11:30 AM - 12:30 PM</td>
+                        <td>Classroom</td>
+                        <td>Upcoming</td>
+                    </tr>
+
+                    <tr>
+                        <td>Communication Skills</td>
+                        <td>Quiz</td>
+                        <td>5 October 2026</td>
+                        <td>2:00 PM - 3:00 PM</td>
+                        <td>Classroom</td>
+                        <td>Completed</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Add Exam -->
+
+        <section>
+
+            <h2>Add Exam</h2>
+
+            <form>
+
+                <p>
+
+                    <label for="subject">
+                        Subject:
+                    </label>
+
+                    <select id="subject" name="subject">
+
+                        <option value="">
+                            Select Subject
+                        </option>
+
+                        <option value="mathematics">
+                            Engineering Mathematics
+                        </option>
+
+                        <option value="pps">
+                            Programming for Problem Solving
+                        </option>
+
+                        <option value="physics">
+                            Engineering Physics
+                        </option>
+
+                        <option value="mechanics">
+                            Engineering Mechanics
+                        </option>
+
+                        <option value="english">
+                            Communication Skills
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+                <p>
+
+                    <label for="exam-type">
+                        Exam Type:
+                    </label>
+
+                    <select id="exam-type" name="exam-type">
+
+                        <option value="">
+                            Select Exam Type
+                        </option>
+
+                        <option value="quiz">
+                            Quiz
+                        </option>
+
+                        <option value="midsem">
+                            Mid-Semester
+                        </option>
+
+                        <option value="endsem">
+                            End-Semester
+                        </option>
+
+                        <option value="lab">
+                            Lab Examination
+                        </option>
+
+                        <option value="viva">
+                            Viva
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+                <p>
+
+                    <label for="exam-date">
+                        Exam Date:
+                    </label>
+
+                    <input
+                        type="date"
+                        id="exam-date"
+                        name="exam-date"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="exam-time">
+                        Exam Time:
+                    </label>
+
+                    <input
+                        type="time"
+                        id="exam-time"
+                        name="exam-time"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="venue">
+                        Venue:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="venue"
+                        name="venue"
+                        placeholder="Example: AB4 - 315"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="duration">
+                        Duration:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="duration"
+                        name="duration"
+                        placeholder="Example: 90 minutes"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <button type="submit">
+                        Add Exam
+                    </button>
+
+                </p>
+
+            </form>
+
+        </section>
+
+
+        <!-- Exam Preparation -->
+
+        <section>
+
+            <h2>Exam Preparation</h2>
+
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+                        <th>Subject</th>
+                        <th>Syllabus Progress</th>
+                        <th>Preparation Status</th>
+                        <th>Priority</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Engineering Mathematics</td>
+                        <td>80%</td>
+                        <td>In Progress</td>
+                        <td>High</td>
+                    </tr>
+
+                    <tr>
+                        <td>Engineering Physics</td>
+                        <td>60%</td>
+                        <td>In Progress</td>
+                        <td>High</td>
+                    </tr>
+
+                    <tr>
+                        <td>Programming for Problem Solving</td>
+                        <td>90%</td>
+                        <td>Almost Ready</td>
+                        <td>Medium</td>
+                    </tr>
+
+                    <tr>
+                        <td>Engineering Mechanics</td>
+                        <td>45%</td>
+                        <td>Needs Attention</td>
+                        <td>High</td>
+                    </tr>
+
+                    <tr>
+                        <td>Communication Skills</td>
+                        <td>95%</td>
+                        <td>Ready</td>
+                        <td>Low</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Study Plan -->
+
+        <section>
+
+            <h2>Study Plan</h2>
+
+            <form>
+
+                <p>
+
+                    <label for="study-subject">
+                        Subject:
+                    </label>
+
+                    <select id="study-subject" name="study-subject">
+
+                        <option value="">
+                            Select Subject
+                        </option>
+
+                        <option value="mathematics">
+                            Engineering Mathematics
+                        </option>
+
+                        <option value="pps">
+                            Programming for Problem Solving
+                        </option>
+
+                        <option value="physics">
+                            Engineering Physics
+                        </option>
+
+                        <option value="mechanics">
+                            Engineering Mechanics
+                        </option>
+
+                        <option value="english">
+                            Communication Skills
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+                <p>
+
+                    <label for="study-date">
+                        Study Date:
+                    </label>
+
+                    <input
+                        type="date"
+                        id="study-date"
+                        name="study-date"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="study-hours">
+                        Planned Study Hours:
+                    </label>
+
+                    <input
+                        type="number"
+                        id="study-hours"
+                        name="study-hours"
+                        min="0"
+                        step="0.5"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="topics">
+                        Topics to Study:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="topics"
+                        name="topics"
+                        rows="5"
+                        cols="40"
+                    ></textarea>
+
+                </p>
+
+
+                <button type="submit">
+                    Add to Study Plan
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 StudentOS. Built by a CSE student.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

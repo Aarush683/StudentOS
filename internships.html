@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentOS - Internships</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>StudentOS</h1>
+        <p>Internship Application Tracker</p>
+    </header>
+
+
+    <nav>
+        <a href="index.html">Dashboard</a> |
+        <a href="subjects.html">Subjects</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="assignments.html">Assignments</a> |
+        <a href="exams.html">Exams</a> |
+        <a href="internships.html">Internships</a> |
+        <a href="resume.html">Resume</a> |
+        <a href="resources.html">Resources</a> |
+        <a href="profile.html">Profile</a>|
+        <a href="about.html">About</a>
+    </nav>
+
+
+    <main>
+
+        <!-- Internship Overview -->
+
+        <section>
+
+            <h2>Internship Overview</h2>
+
+            <article>
+                <h3>Saved</h3>
+                <p>6</p>
+            </article>
+
+            <article>
+                <h3>Applied</h3>
+                <p>4</p>
+            </article>
+
+            <article>
+                <h3>Interviews</h3>
+                <p>2</p>
+            </article>
+
+            <article>
+                <h3>Offers</h3>
+                <p>1</p>
+            </article>
+
+        </section>
+
+
+        <!-- Internship Applications -->
+
+        <section>
+
+            <h2>My Internship Applications</h2>
+
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+                        <th>Company</th>
+                        <th>Role</th>
+                        <th>Location</th>
+                        <th>Stipend</th>
+                        <th>Deadline</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Google</td>
+                        <td>Software Engineering Intern</td>
+                        <td>Bangalore / Remote</td>
+                        <td>₹80,000/month</td>
+                        <td>15 November 2026</td>
+                        <td>Saved</td>
+                    </tr>
+
+                    <tr>
+                        <td>Microsoft</td>
+                        <td>Software Engineer Intern</td>
+                        <td>Hyderabad</td>
+                        <td>₹70,000/month</td>
+                        <td>20 November 2026</td>
+                        <td>Applied</td>
+                    </tr>
+
+                    <tr>
+                        <td>Amazon</td>
+                        <td>SDE Intern</td>
+                        <td>Bangalore</td>
+                        <td>₹60,000/month</td>
+                        <td>10 November 2026</td>
+                        <td>Interview</td>
+                    </tr>
+
+                    <tr>
+                        <td>Zoho</td>
+                        <td>Web Developer Intern</td>
+                        <td>Chennai</td>
+                        <td>₹35,000/month</td>
+                        <td>5 December 2026</td>
+                        <td>Applied</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tech Startup</td>
+                        <td>Frontend Developer Intern</td>
+                        <td>Remote</td>
+                        <td>₹20,000/month</td>
+                        <td>1 December 2026</td>
+                        <td>Rejected</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Add Internship -->
+
+        <section>
+
+            <h2>Add Internship</h2>
+
+            <form>
+
+                <p>
+
+                    <label for="company">
+                        Company:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="company"
+                        name="company"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="role">
+                        Job Role:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="role"
+                        name="role"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="location">
+                        Location:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="stipend">
+                        Stipend:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="stipend"
+                        name="stipend"
+                        placeholder="Example: ₹30,000/month"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="deadline">
+                        Application Deadline:
+                    </label>
+
+                    <input
+                        type="date"
+                        id="deadline"
+                        name="deadline"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="application-link">
+                        Application Link:
+                    </label>
+
+                    <input
+                        type="url"
+                        id="application-link"
+                        name="application-link"
+                        placeholder="https://example.com"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="skills">
+                        Required Skills:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="skills"
+                        name="skills"
+                        rows="4"
+                        cols="40"
+                        placeholder="Example: C++, DSA, HTML, CSS"
+                    ></textarea>
+
+                </p>
+
+
+                <p>
+
+                    <label for="internship-status">
+                        Status:
+                    </label>
+
+                    <select
+                        id="internship-status"
+                        name="internship-status"
+                    >
+
+                        <option value="saved">
+                            Saved
+                        </option>
+
+                        <option value="applied">
+                            Applied
+                        </option>
+
+                        <option value="interview">
+                            Interview
+                        </option>
+
+                        <option value="offer">
+                            Offer
+                        </option>
+
+                        <option value="rejected">
+                            Rejected
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+                <p>
+
+                    <label for="notes">
+                        Notes:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="notes"
+                        name="notes"
+                        rows="5"
+                        cols="40"
+                        placeholder="Add interview notes, preparation notes, etc."
+                    ></textarea>
+
+                </p>
+
+
+                <button type="submit">
+                    Add Internship
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Application Status -->
+
+        <section>
+
+            <h2>Application Status</h2>
+
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+                        <th>Status</th>
+                        <th>Number of Applications</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Saved</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>Applied</td>
+                        <td>4</td>
+                    </tr>
+
+                    <tr>
+                        <td>Interview</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Offer</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rejected</td>
+                        <td>1</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Internship Preparation -->
+
+        <section>
+
+            <h2>Internship Preparation</h2>
+
+            <ul>
+
+                <li>Build strong programming fundamentals.</li>
+
+                <li>Practice Data Structures and Algorithms.</li>
+
+                <li>Build and document meaningful projects.</li>
+
+                <li>Maintain an active GitHub profile.</li>
+
+                <li>Prepare a professional resume.</li>
+
+                <li>Practice technical and behavioral interviews.</li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 StudentOS. Built by a CSE student.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

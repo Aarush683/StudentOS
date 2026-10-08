@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentOS - Assignments</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>StudentOS</h1>
+        <p>Assignment Management</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Dashboard</a> |
+        <a href="subjects.html">Subjects</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="assignments.html">Assignments</a> |
+        <a href="exams.html">Exams</a> |
+        <a href="internships.html">Internships</a> |
+        <a href="resume.html">Resume</a> |
+        <a href="resources.html">Resources</a> |
+        <a href="profile.html">Profile</a>|
+        <a href="about.html">About</a>
+    </nav>
+
+    <main>
+
+        <!-- Assignment Summary -->
+
+        <section>
+
+            <h2>Assignment Overview</h2>
+
+            <article>
+                <h3>Total Assignments</h3>
+                <p>8</p>
+            </article>
+
+            <article>
+                <h3>Pending</h3>
+                <p>3</p>
+            </article>
+
+            <article>
+                <h3>Completed</h3>
+                <p>5</p>
+            </article>
+
+            <article>
+                <h3>Due This Week</h3>
+                <p>2</p>
+            </article>
+
+        </section>
+
+
+        <!-- Assignment List -->
+
+        <section>
+
+            <h2>My Assignments</h2>
+
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+                        <th>Assignment</th>
+                        <th>Subject</th>
+                        <th>Due Date</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>PPS Lab Assignment 4</td>
+                        <td>Programming for Problem Solving</td>
+                        <td>8 October 2026</td>
+                        <td>High</td>
+                        <td>Pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>Matrix Algebra Problem Set</td>
+                        <td>Mathematics</td>
+                        <td>10 October 2026</td>
+                        <td>Medium</td>
+                        <td>Pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>Physics Lab Report</td>
+                        <td>Engineering Physics</td>
+                        <td>12 October 2026</td>
+                        <td>High</td>
+                        <td>Pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>Communication Skills Essay</td>
+                        <td>Communication Skills</td>
+                        <td>5 October 2026</td>
+                        <td>Medium</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mechanics Tutorial</td>
+                        <td>Engineering Mechanics</td>
+                        <td>3 October 2026</td>
+                        <td>Low</td>
+                        <td>Completed</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Add Assignment -->
+
+        <section>
+
+            <h2>Add New Assignment</h2>
+
+            <form>
+
+                <p>
+
+                    <label for="assignment-name">
+                        Assignment Name:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="assignment-name"
+                        name="assignment-name"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="subject">
+                        Subject:
+                    </label>
+
+                    <select id="subject" name="subject">
+
+                        <option value="">
+                            Select Subject
+                        </option>
+
+                        <option value="mathematics">
+                            Engineering Mathematics
+                        </option>
+
+                        <option value="pps">
+                            Programming for Problem Solving
+                        </option>
+
+                        <option value="physics">
+                            Engineering Physics
+                        </option>
+
+                        <option value="mechanics">
+                            Engineering Mechanics
+                        </option>
+
+                        <option value="english">
+                            Communication Skills
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+                <p>
+
+                    <label for="due-date">
+                        Due Date:
+                    </label>
+
+                    <input
+                        type="date"
+                        id="due-date"
+                        name="due-date"
+                    >
+
+                </p>
+
+
+                <p>
+
+                    <label for="priority">
+                        Priority:
+                    </label>
+
+                    <select id="priority" name="priority">
+
+                        <option value="">
+                            Select Priority
+                        </option>
+
+                        <option value="high">
+                            High
+                        </option>
+
+                        <option value="medium">
+                            Medium
+                        </option>
+
+                        <option value="low">
+                            Low
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+                <p>
+
+                    <label for="description">
+                        Description:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="5"
+                        cols="40"
+                    ></textarea>
+
+                </p>
+
+
+                <p>
+
+                    <button type="submit">
+                        Add Assignment
+                    </button>
+
+                </p>
+
+            </form>
+
+        </section>
+
+
+        <!-- Assignment Status -->
+
+        <section>
+
+            <h2>Assignment Status</h2>
+
+            <form>
+
+                <p>
+
+                    <label for="assignment">
+                        Select Assignment:
+                    </label>
+
+                    <select id="assignment" name="assignment">
+
+                        <option value="">
+                            Select Assignment
+                        </option>
+
+                        <option value="pps">
+                            PPS Lab Assignment 4
+                        </option>
+
+                        <option value="maths">
+                            Matrix Algebra Problem Set
+                        </option>
+
+                        <option value="physics">
+                            Physics Lab Report
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+                <p>
+
+                    <label for="status">
+                        Status:
+                    </label>
+
+                    <select id="status" name="status">
+
+                        <option value="pending">
+                            Pending
+                        </option>
+
+                        <option value="progress">
+                            In Progress
+                        </option>
+
+                        <option value="completed">
+                            Completed
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+                <button type="submit">
+                    Update Status
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 StudentOS. Built by a CSE student.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
